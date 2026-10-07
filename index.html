@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HelpCFO | Tax, Accounting, Virtual CFO &amp; Compliance Services</title>
 <meta name="description" content="HelpCFO handles GST, TDS and income tax compliance, accounting, payroll, virtual CFO services, funding, audit, registrations and more. Helping businesses to achieve new heights.">
-<meta name="theme-color" content="#f5f5f7">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<!-- Security policy hash is generated for the inline script below. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-0iXnZfSMvPVm9Ovq4194VDoMoKHimcjGTtLnRDS+B2o='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; object-src 'none'; base-uri 'self'; frame-src 'none'; worker-src 'none'; form-action 'self'; upgrade-insecure-requests">
+<meta name="theme-color" content="#0A2A5E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A2A5E'/%3E%3Cpath d='M16 34l12 12 21-26' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -270,500 +267,6 @@ footer{background:var(--ink);color:#B7C2D6;padding:56px 0 28px}
   .wa{padding:14px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-
-/* =========================================================
-   HelpCFO — premium calm interface refresh
-   High whitespace, editorial scale, translucent surfaces,
-   restrained motion and a strong information hierarchy.
-   ========================================================= */
-:root{
-  --navy:#0071e3;
-  --navy-2:#0077ed;
-  --ink:#1d1d1f;
-  --body:#424245;
-  --slate:#6e6e73;
-  --mist:#f5f5f7;
-  --line:rgba(0,0,0,.08);
-  --paper:#fff;
-  --green:#168a55;
-  --head:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
-  --text:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
-}
-html{scroll-padding-top:72px}
-body{
-  background:#fff;
-  color:var(--body);
-  font-family:var(--text);
-  font-size:17px;
-  line-height:1.55;
-  letter-spacing:-.012em;
-}
-.wrap{width:min(1200px,calc(100% - 48px))}
-h1,h2,h3,h4{font-family:var(--head);color:var(--ink);letter-spacing:-.035em}
-h2{font-size:clamp(2.35rem,4.6vw,4rem);line-height:1.02;font-weight:700}
-h3{font-weight:650}
-:focus-visible{outline:3px solid rgba(0,113,227,.55);outline-offset:3px;border-radius:10px}
-
-/* Top strip + translucent navigation */
-.top{background:#1d1d1f;color:#f5f5f7;font-size:.78rem;letter-spacing:-.005em}
-.top .wrap{min-height:34px;padding:6px 0;align-items:center}
-.top .links{gap:18px;opacity:.88}
-.top a{color:#f5f5f7}
-header.site{
-  top:0;
-  background:rgba(255,255,255,.78);
-  -webkit-backdrop-filter:saturate(180%) blur(22px);
-  backdrop-filter:saturate(180%) blur(22px);
-  border-bottom:1px solid rgba(0,0,0,.06);
-  box-shadow:none;
-}
-header.site .wrap{height:64px}
-.brand{display:flex;align-items:center}
-.brand img{height:36px;max-width:150px;object-fit:contain}
-nav.main ul{gap:2px}
-nav.main a{
-  padding:9px 11px;
-  font:500 .86rem/1 var(--text);
-  color:#1d1d1f;
-  border-radius:999px;
-  transition:background .22s ease,color .22s ease;
-}
-nav.main a:hover{background:rgba(0,0,0,.05)}
-
-/* Buttons: simple, rounded, tactile */
-.btn{
-  border:0;
-  border-radius:999px;
-  background:#0071e3;
-  color:#fff;
-  padding:13px 21px;
-  font:600 .95rem/1.05 var(--text);
-  box-shadow:none;
-  transition:transform .2s ease,background .2s ease,box-shadow .2s ease;
-}
-.btn:hover{background:#0077ed;transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,113,227,.18)}
-.btn:active{transform:scale(.985)}
-.btn.ghost{
-  background:rgba(0,113,227,.08);
-  color:#0066cc;
-  border:0;
-}
-.btn.ghost:hover{background:rgba(0,113,227,.13);color:#0066cc}
-.btn.light{background:#fff;color:#1d1d1f}
-.btn.sm{padding:11px 16px;font-size:.86rem}
-
-/* Hero */
-.hero{
-  position:relative;
-  padding:112px 0 104px;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 20% 10%,rgba(93,152,255,.16),transparent 31%),
-    radial-gradient(circle at 83% 15%,rgba(181,215,255,.28),transparent 27%),
-    linear-gradient(180deg,#fbfbfd 0%,#fff 84%);
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  width:520px;height:520px;border-radius:50%;
-  left:42%;top:-360px;
-  background:rgba(255,255,255,.7);
-  filter:blur(10px);
-}
-.hero::after{height:100px;background:linear-gradient(to bottom,transparent,#fff)}
-.hero .wrap{grid-template-columns:1.06fr .94fr;gap:72px;align-items:center}
-.hero .wrap>div:first-child::before,
-.why .intro::before,
-#services .head::before,
-#process .head::before,
-#tools .head::before,
-#faq .head::before,
-.contact .info::before{
-  display:block;
-  margin-bottom:14px;
-  color:#bf4800;
-  font:600 .9rem/1 var(--text);
-  letter-spacing:-.01em;
-}
-.hero .wrap>div:first-child::before{content:"Finance, without the friction."}
-.hero h1{
-  font-size:clamp(3.3rem,6.4vw,5.65rem);
-  line-height:.96;
-  font-weight:720;
-  letter-spacing:-.058em;
-  max-width:11.5ch;
-  text-wrap:balance;
-}
-.hero .lede{
-  margin-top:28px;
-  font-size:clamp(1.15rem,1.9vw,1.38rem);
-  line-height:1.42;
-  color:#6e6e73;
-  max-width:36rem;
-  letter-spacing:-.025em;
-}
-.hero .cta{margin-top:34px;gap:10px}
-.quick{margin-top:42px}
-.quick p{font:600 .82rem var(--text);color:#86868b;margin-bottom:12px}
-.quick div{gap:8px}
-.chip{
-  padding:9px 13px;
-  border:1px solid rgba(0,0,0,.075);
-  border-radius:999px;
-  background:rgba(255,255,255,.72);
-  color:#3a3a3c;
-  font:500 .84rem var(--text);
-  box-shadow:0 1px 0 rgba(255,255,255,.75) inset;
-  transition:all .2s ease;
-}
-.chip:hover{border-color:rgba(0,113,227,.22);background:#fff;color:#0066cc;transform:translateY(-1px)}
-
-/* Compliance card */
-.ledger{
-  border:1px solid rgba(0,0,0,.06);
-  border-radius:30px;
-  box-shadow:0 34px 80px -42px rgba(0,0,0,.34),0 10px 34px -24px rgba(0,0,0,.2);
-  background:rgba(255,255,255,.9);
-  -webkit-backdrop-filter:blur(18px);
-  backdrop-filter:blur(18px);
-}
-.ledger-h{
-  background:#1d1d1f;
-  padding:24px 26px 20px;
-}
-.ledger-h h2{font-size:1.18rem;letter-spacing:-.02em;font-weight:650}
-.ledger-h p{color:#a1a1a6;font-size:.82rem;margin-top:5px}
-.ledger-h .today{background:rgba(255,255,255,.1);font:600 .76rem var(--text);padding:7px 10px;border-radius:999px;color:#f5f5f7}
-.row{grid-template-columns:56px 1fr auto;gap:14px;padding:15px 24px;transition:background .2s ease}
-.row:hover{background:#f7f7f9}
-.date{border:0;background:#f5f5f7;border-radius:14px;padding:8px 0}
-.date b{font-size:1.18rem;letter-spacing:-.03em}
-.date span{font:600 .68rem var(--text);color:#86868b;text-transform:uppercase;letter-spacing:.03em}
-.row .t{font:600 .94rem var(--text);letter-spacing:-.015em}
-.row .s{font-size:.8rem;color:#86868b}
-.status{background:#f5f5f7;color:#6e6e73;font:600 .72rem var(--text);padding:6px 9px}
-.status.soon{background:#fff1e6;color:#b54708}
-.ledger-f{padding:14px 24px 18px;background:#fff;color:#86868b;font-size:.76rem;border-top:1px solid rgba(0,0,0,.06)}
-
-/* Proof band as floating glass cards */
-.facts{background:#fff;color:var(--ink);padding:0 0 24px}
-.facts .wrap{
-  position:relative;
-  z-index:2;
-  margin-top:-36px;
-  padding:0;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-}
-.facts .wrap>div{
-  min-height:132px;
-  padding:26px;
-  border-radius:24px;
-  background:#f5f5f7;
-  align-items:flex-start;
-  gap:16px;
-}
-.facts svg{width:27px;height:27px;color:#0071e3;margin-top:2px}
-.facts strong{font:650 1.08rem/1.15 var(--head);letter-spacing:-.028em;color:#1d1d1f}
-.facts span{display:block;margin-top:7px;font-size:.86rem;line-height:1.35;color:#6e6e73}
-
-section{padding:118px 0}
-.head{max-width:53rem;margin-bottom:52px}
-.head p{margin-top:20px;font-size:1.18rem;line-height:1.45;color:#6e6e73;max-width:46rem}
-.mist{background:#f5f5f7}
-
-/* Why */
-#about{background:#fff}
-.why{grid-template-columns:.95fr 1.05fr;gap:92px}
-.why .intro::before{content:"Built for growing businesses."}
-.why .intro{position:sticky;top:110px}
-.why .intro h2{max-width:9.5ch}
-.why .intro p{margin-top:24px;font-size:1.12rem;color:#6e6e73;max-width:33rem}
-.pts{gap:12px}
-.pts li{
-  border:0!important;
-  border-radius:24px;
-  background:#f5f5f7;
-  padding:28px;
-  grid-template-columns:34px 1fr;
-  transition:transform .25s ease,background .25s ease;
-}
-.pts li:hover{transform:translateY(-2px);background:#f0f0f2}
-.pts li::before{width:26px;height:26px;border-radius:50%;background:#0071e3}
-.pts h3{font-size:1.2rem;letter-spacing:-.025em}
-.pts p{margin-top:8px;color:#6e6e73;font-size:.96rem}
-
-/* Services */
-#services .head::before{content:"A complete finance stack."}
-#services .head h2{max-width:15ch}
-.tools-bar{
-  position:sticky;
-  top:76px;
-  z-index:10;
-  padding:12px;
-  margin:0 -12px 28px;
-  border-radius:22px;
-  background:rgba(245,245,247,.82);
-  -webkit-backdrop-filter:blur(22px);
-  backdrop-filter:blur(22px);
-}
-.tabs{gap:7px}
-.tab{
-  padding:9px 14px;
-  border:0;
-  border-radius:999px;
-  background:#fff;
-  color:#515154;
-  font:600 .82rem var(--text);
-  box-shadow:0 1px 2px rgba(0,0,0,.04);
-}
-.tab[aria-pressed="true"]{background:#1d1d1f;color:#fff}
-.search{max-width:340px}
-.search input{
-  border:0;
-  border-radius:999px;
-  padding:11px 15px 11px 40px;
-  background:#fff;
-  box-shadow:0 1px 2px rgba(0,0,0,.04);
-}
-.search input:focus{outline:2px solid rgba(0,113,227,.35)}
-.count{font-size:.84rem;color:#86868b;margin:0 0 16px 4px}
-.grid{gap:16px}
-.card{
-  min-height:290px;
-  border:0;
-  border-radius:28px;
-  padding:30px;
-  gap:13px;
-  background:#fff;
-  box-shadow:0 1px 2px rgba(0,0,0,.025);
-  transition:transform .25s ease,box-shadow .25s ease;
-  overflow:hidden;
-}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -30px rgba(0,0,0,.32)}
-.card .grp{font:600 .78rem var(--text);color:#86868b;text-transform:uppercase;letter-spacing:.03em}
-.card h3{font-size:1.35rem;line-height:1.1}
-.card .tag{color:#6e6e73;font-style:normal;font-size:.93rem;line-height:1.42}
-.ticks{gap:9px;margin-top:8px}
-.ticks li{font-size:.9rem;color:#515154}
-.ticks li::before{width:15px;height:15px;background:#0071e3}
-.card .more{font:600 .9rem var(--text);color:#0066cc;text-decoration:none;padding-top:18px}
-.card .more::after{content:"  ›";font-size:1.15em}
-.card.feature{
-  position:relative;
-  background:linear-gradient(145deg,#1d1d1f,#343437);
-  border:0;
-  color:#d2d2d7;
-}
-.card.feature::after{
-  content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-110px;top:-120px;
-  background:radial-gradient(circle,rgba(0,113,227,.55),rgba(0,113,227,0) 70%);pointer-events:none;
-}
-.card.feature h3{font-size:1.75rem}
-.card.feature .grp,.card.feature .tag{color:#a1a1a6}
-.card.feature .ticks li{color:#e8e8ed}
-.card.feature .more{color:#2997ff}
-.card.ask{border:1px dashed rgba(0,0,0,.16);background:rgba(255,255,255,.38)}
-.empty{border:0;border-radius:28px;background:#fff;padding:60px 30px}
-
-/* Modal */
-dialog{border-radius:28px;box-shadow:0 50px 120px -34px rgba(0,0,0,.52);border:1px solid rgba(255,255,255,.5)}
-dialog::backdrop{background:rgba(0,0,0,.34);backdrop-filter:blur(8px)}
-.dlg-h{padding:28px 30px 18px;border-bottom:1px solid rgba(0,0,0,.06)}
-.dlg-h p{font-style:normal;color:#86868b}
-.x{border:0;background:#f5f5f7;border-radius:50%;width:36px;height:36px;color:#515154}
-.dlg-b{padding:8px 30px}
-.dlg-b li{border-color:rgba(0,0,0,.06);padding:16px 0}
-.dlg-f{padding:18px 30px 28px;border-top:1px solid rgba(0,0,0,.06)}
-
-/* Process */
-#process .head::before{content:"Simple from day one."}
-.steps{gap:14px;counter-reset:s}
-.steps::before{display:none}
-.steps li{
-  min-height:240px;
-  padding:28px;
-  border-radius:26px;
-  background:#f5f5f7;
-}
-.steps li::before{
-  width:40px;height:40px;
-  background:#1d1d1f;
-  box-shadow:none;
-  font:650 1rem var(--text);
-}
-.steps h3{margin:34px 0 9px;font-size:1.16rem}
-.steps p{color:#6e6e73;font-size:.93rem}
-
-/* Tools */
-#tools .head::before{content:"Useful, instantly."}
-#tools .head h2{max-width:13ch}
-.ctabs{margin-bottom:16px}
-.calc{
-  border:0;
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 8px 30px -24px rgba(0,0,0,.3);
-}
-.calc .in{padding:38px;background:#fff;gap:19px}
-.calc .out{padding:38px;background:#1d1d1f;color:#f5f5f7;gap:18px}
-label{font:600 .85rem var(--text);color:#515154;margin-bottom:7px}
-input,select,textarea{
-  border:1px solid rgba(0,0,0,.1);
-  border-radius:14px;
-  padding:13px 14px;
-  background:#fff;
-  transition:border-color .2s ease,box-shadow .2s ease;
-}
-input:focus,select:focus,textarea:focus{outline:none;border-color:#0071e3;box-shadow:0 0 0 4px rgba(0,113,227,.1)}
-.seg{gap:7px}
-.seg button{border:0;border-radius:999px;background:#f5f5f7;font:600 .82rem var(--text);padding:9px 14px}
-.seg button[aria-pressed="true"]{background:#1d1d1f;color:#fff}
-.out .big{font:700 clamp(2.4rem,5vw,4rem)/1 var(--head);letter-spacing:-.055em}
-.out .lbl,.out dt,.out .note{color:#a1a1a6}
-.out dl div{border-color:rgba(255,255,255,.12)}
-.out dd{color:#f5f5f7}
-.note{color:#86868b}
-
-/* FAQ */
-#faq .head::before{content:"Good questions. Clear answers."}
-.faq{max-width:58rem}
-details{
-  border:0!important;
-  background:#f5f5f7;
-  border-radius:20px;
-  margin-bottom:10px;
-  padding:0 22px;
-}
-summary{padding:21px 42px 21px 0;font:600 1.05rem var(--text);letter-spacing:-.018em}
-details p{padding:0 40px 22px 0;color:#6e6e73}
-summary::after{border-color:#86868b}
-
-/* Contact — deep, focused close */
-.contact{
-  position:relative;
-  background:#1d1d1f;
-  color:#d2d2d7;
-  overflow:hidden;
-}
-.contact::before{
-  content:"";position:absolute;width:700px;height:700px;border-radius:50%;right:-260px;top:-300px;
-  background:radial-gradient(circle,rgba(0,113,227,.32),transparent 68%);pointer-events:none;
-}
-.contact .info::before{content:"Ready when you are.";color:#2997ff}
-.contact h2{font-size:clamp(2.6rem,5.5vw,4.8rem);max-width:8ch;color:#f5f5f7}
-.cgrid{grid-template-columns:.8fr 1.2fr;gap:82px}
-.cgrid .info p{color:#a1a1a6;font-size:1.12rem;max-width:28rem}
-.clist{gap:18px}
-.clist small{color:#86868b}
-.clist a{font:600 1rem var(--text);color:#f5f5f7}
-form.enq{
-  position:relative;
-  border-radius:30px;
-  padding:34px;
-  gap:18px;
-  background:rgba(255,255,255,.98);
-  box-shadow:0 35px 70px -44px #000;
-}
-form.enq .acts{align-items:center}
-.fallback{background:#f5f5f7;border:0;border-radius:18px}
-#fmsg{font-size:.88rem}
-
-/* Footer */
-footer{background:#111;color:#86868b;padding:68px 0 30px}
-.fgrid{gap:46px}
-.fgrid h4{font-size:.82rem;color:#d2d2d7;letter-spacing:0;text-transform:uppercase}
-.fgrid a{color:#a1a1a6;font-size:.9rem}
-.fgrid a:hover{color:#fff;text-decoration:none}
-.logo-chip{border-radius:16px;padding:9px 13px}
-.logo-chip img{height:48px}
-.legal{border-color:rgba(255,255,255,.08);color:#6e6e73}
-
-/* Floating WhatsApp */
-.wa{
-  right:22px;bottom:22px;
-  border:1px solid rgba(255,255,255,.55);
-  background:rgba(29,29,31,.88);
-  -webkit-backdrop-filter:blur(18px);
-  backdrop-filter:blur(18px);
-  padding:12px 17px;
-  box-shadow:0 12px 34px -16px rgba(0,0,0,.48);
-}
-.wa:hover{background:#1d1d1f;transform:translateY(-2px)}
-
-/* Gentle arrival motion */
-@media (prefers-reduced-motion:no-preference){
-  .hero h1,.hero .lede,.hero .cta,.ledger{animation:hc-rise .7s cubic-bezier(.2,.7,.2,1) both}
-  .hero .lede{animation-delay:.07s}.hero .cta{animation-delay:.12s}.ledger{animation-delay:.12s}
-  @keyframes hc-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-}
-
-@media (max-width:980px){
-  .wrap{width:min(100% - 36px,900px)}
-  .hero{padding:86px 0 78px}
-  .hero .wrap,.why,.cgrid{grid-template-columns:1fr;gap:52px}
-  .hero h1{max-width:12ch}
-  .ledger{max-width:720px}
-  .facts .wrap{grid-template-columns:1fr 1fr 1fr}
-  .why .intro{position:static}
-  .why .intro h2{max-width:13ch}
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .card.feature{grid-column:span 2}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .tools-bar{top:70px}
-  .cgrid .info{max-width:640px}
-  nav.main{top:100%;background:rgba(255,255,255,.96);backdrop-filter:blur(22px);padding:12px 20px 20px}
-  nav.main a{padding:13px 14px;font-size:1rem}
-}
-@media (max-width:700px){
-  body{font-size:16px}
-  .wrap{width:min(100% - 28px,640px)}
-  .top .wrap{min-height:30px}
-  .top .links{gap:12px}
-  header.site .wrap{height:58px}
-  .brand img{height:32px;max-width:132px}
-  .hero{padding:68px 0 66px}
-  .hero .wrap{gap:42px}
-  .hero h1{font-size:clamp(3rem,15vw,4.45rem);max-width:10.2ch}
-  .hero .lede{font-size:1.1rem}
-  .hero .cta{display:grid;grid-template-columns:1fr 1fr}
-  .hero .cta .btn{width:100%}
-  .quick{margin-top:32px}
-  .ledger{border-radius:24px}
-  .ledger-h{padding:20px}
-  .row{grid-template-columns:52px 1fr;padding:14px 18px}
-  .row .status{grid-column:2;justify-self:start}
-  .ledger-f{padding:13px 18px 16px}
-  .facts{padding-top:14px}
-  .facts .wrap{margin-top:0;grid-template-columns:1fr;gap:9px}
-  .facts .wrap>div{min-height:auto;padding:20px;border-radius:20px}
-  section{padding:86px 0}
-  .head{margin-bottom:36px}
-  .head p{font-size:1.05rem}
-  .why{gap:36px}
-  .pts li{padding:22px;border-radius:20px}
-  .tools-bar{position:static;padding:0;margin:0 0 24px;background:transparent;display:grid}
-  .tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:none}
-  .tabs::-webkit-scrollbar{display:none}
-  .tab{flex:none}
-  .search{max-width:none;width:100%}
-  .grid{grid-template-columns:1fr}
-  .card,.card.feature{grid-column:auto;min-height:auto;border-radius:24px;padding:25px}
-  .card.feature .ticks{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr;gap:10px}
-  .steps li{min-height:auto;padding:24px;border-radius:22px}
-  .steps h3{margin-top:24px}
-  .calc{grid-template-columns:1fr;border-radius:24px}
-  .calc .in,.calc .out{padding:26px}
-  details{border-radius:18px;padding:0 18px}
-  .contact h2{max-width:10ch}
-  .cgrid{gap:42px}
-  form.enq{grid-template-columns:1fr;padding:24px;border-radius:24px}
-  .fgrid{grid-template-columns:1fr}
-  .wa{right:14px;bottom:14px;padding:13px}
-  .wa span{display:none}
-}
-
 </style>
 </head>
 <body>
@@ -1024,16 +527,12 @@ footer{background:#111;color:#86868b;padding:68px 0 30px}
       </ul>
     </div>
 
-    <form class="enq" id="enq" novalidate autocomplete="on">
-      <div><label for="fName">Your name</label><input id="fName" name="name" required maxlength="100" autocomplete="name"></div>
-      <div><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" maxlength="30" autocomplete="tel" inputmode="tel"></div>
-      <div class="full"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" required maxlength="254" autocomplete="email"></div>
-      <div class="full"><label for="fSvc">What do you need help with?</label><select id="fSvc" name="service"></select></div>
-      <div class="full"><label for="fMsg">A few details</label><textarea id="fMsg" name="message" maxlength="3000" placeholder="Tell us about your business and what you need. Please do not include passwords, OTPs, bank details or sensitive tax documents."></textarea></div>
-      <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">
-        <label for="companyWebsite">Leave this field empty</label>
-        <input id="companyWebsite" name="company_website" type="text" tabindex="-1" autocomplete="off">
-      </div>
+    <form class="enq" id="enq" novalidate>
+      <div><label for="fName">Your name</label><input id="fName" required autocomplete="name"></div>
+      <div><label for="fPhone">Phone</label><input id="fPhone" type="tel" autocomplete="tel"></div>
+      <div class="full"><label for="fEmail">Email</label><input id="fEmail" type="email" required autocomplete="email"></div>
+      <div class="full"><label for="fSvc">What do you need help with?</label><select id="fSvc"></select></div>
+      <div class="full"><label for="fMsg">A few details</label><textarea id="fMsg" placeholder="Tell us about your business and what you need."></textarea></div>
       <div class="full acts">
         <button class="btn" type="submit" id="sendBtn">Send enquiry</button>
         <button class="btn ghost" type="button" id="waBtn">Message on WhatsApp</button>
@@ -1251,7 +750,6 @@ const S=[
 
 /* ---------- helpers ---------- */
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const escHTML=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));
 const inr=n=>"₹"+Number(n).toLocaleString("en-IN",{maximumFractionDigits:2,minimumFractionDigits:2});
 const inr0=n=>"₹"+Math.round(n).toLocaleString("en-IN");
 
@@ -1289,7 +787,7 @@ function drawCal(){
     const isDone=done.has(key);
     return `<li><button class="row${isDone?" done":""}" data-k="${key}" aria-pressed="${isDone}">
       <span class="date"><b>${dt.getDate()}</b><span>${dt.toLocaleDateString("en-IN",{month:"short"})}</span></span>
-      <span><span class="t">${escHTML(o.n)}</span><br><span class="s">${escHTML(o.s)}</span></span>
+      <span><span class="t">${o.n}</span><br><span class="s">${o.s}</span></span>
       <span class="status${days<=3&&!isDone?" soon":""}">${isDone?"Done":lab}</span></button></li>`;
   }).join("");
 }
@@ -1303,7 +801,7 @@ drawCal();
 /* ---------- services ---------- */
 const state={g:"all",q:""};
 const tabs=$("#tabs");
-tabs.innerHTML=[["all","All services"],...Object.entries(GROUPS)].map(([k,v])=>`<button class="tab" data-g="${escHTML(k)}" aria-pressed="${k==="all"}">${escHTML(v)}</button>`).join("");
+tabs.innerHTML=[["all","All services"],...Object.entries(GROUPS)].map(([k,v])=>`<button class="tab" data-g="${k}" aria-pressed="${k==="all"}">${v}</button>`).join("");
 tabs.addEventListener("click",e=>{const b=e.target.closest(".tab"); if(!b) return; state.g=b.dataset.g; $$(".tab").forEach(t=>t.setAttribute("aria-pressed",t===b)); drawServices();});
 $("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase(); drawServices();});
 
@@ -1321,22 +819,14 @@ function drawServices(){
     return {s,i,hits};
   }).filter(Boolean);
   $("#count").textContent=rows.length?`Showing ${rows.length} of ${S.length} service areas`:"";
-  if(!rows.length){
-    const grid=$("#grid"); grid.replaceChildren();
-    const box=document.createElement("div"); box.className="empty"; box.style.gridColumn="1 / -1";
-    const h=document.createElement("h3"); h.textContent=`No match for "${q}"`;
-    const p=document.createElement("p"); p.style.marginTop="8px"; p.textContent="Try a broader word, or tell us what you need. We tailor services to your business.";
-    const cta=document.createElement("p"); cta.style.marginTop="16px";
-    const a=document.createElement("a"); a.className="btn"; a.href="#contact"; a.textContent="Ask us";
-    cta.appendChild(a); box.append(h,p,cta); grid.appendChild(box); return;
-  }
+  if(!rows.length){$("#grid").innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>No match for "${q.replace(/[<>&"]/g,"")}"</h3><p style="margin-top:8px">Try a broader word, or tell us what you need. We tailor services to your business.</p><p style="margin-top:16px"><a class="btn" href="#contact">Ask us</a></p></div>`;return;}
   $("#grid").innerHTML=rows.map(({s,i,hits})=>{
     const max=s.feature?8:4;
     return `<article class="card${s.feature?" feature":""}">
-      <span class="grp">${escHTML(GROUPS[s.g])}</span>
-      <h3>${escHTML(s.title)}</h3>
-      <p class="tag">${escHTML(s.tag)}</p>
-      <ul class="ticks">${hits.slice(0,max).map(it=>`<li>${escHTML(it[0])}</li>`).join("")}</ul>
+      <span class="grp">${GROUPS[s.g]}</span>
+      <h3>${s.title}</h3>
+      <p class="tag">${s.tag}</p>
+      <ul class="ticks">${hits.slice(0,max).map(it=>`<li>${it[0]}</li>`).join("")}</ul>
       <button class="more" data-i="${i}">See all ${s.items.length} services</button>
     </article>`;
   }).join("")+((state.g==="all"&&!q)?`<aside class="card ask"><h3>Can't find what you need?</h3><p>We tailor our services to your business. Tell us what you are looking for.</p><a class="btn sm" href="#contact" style="margin-top:auto;align-self:flex-start">Talk to an expert</a></aside>`:"");
@@ -1349,7 +839,7 @@ const dlg=$("#dlg"); let cur=0;
 function openDlg(i){
   cur=i; const s=S[i];
   $("#dlgTitle").textContent=s.title; $("#dlgTag").textContent=s.tag;
-  $("#dlgList").innerHTML=s.items.map(it=>`<li><b>${escHTML(it[0])}</b>${it[2]?'<span class="badge">With specialist expert</span>':""}<br>${escHTML(it[1])}</li>`).join("");
+  $("#dlgList").innerHTML=s.items.map(it=>`<li><b>${it[0]}</b>${it[2]?'<span class="badge">With specialist expert</span>':""}<br>${it[1]}</li>`).join("");
   dlg.showModal(); $(".dlg-b").scrollTop=0; dlg.scrollTop=0;
 }
 $("#dlgX").onclick=$("#dlgClose").onclick=()=>dlg.close();
@@ -1364,58 +854,34 @@ $$(".chip").forEach(c=>c.addEventListener("click",()=>{
 }));
 
 /* footer + form select */
-$("#fSvcList").innerHTML=["tax","acc","vcfo","reg","fund"].map(id=>{const s=S.find(x=>x.id===id);return `<li><a href="#services" data-open="${S.indexOf(s)}">${escHTML(s.title)}</a></li>`}).join("");
+$("#fSvcList").innerHTML=["tax","acc","vcfo","reg","fund"].map(id=>{const s=S.find(x=>x.id===id);return `<li><a href="#services" data-open="${S.indexOf(s)}">${s.title}</a></li>`}).join("");
 $("#fSvcList").addEventListener("click",e=>{const a=e.target.closest("[data-open]"); if(a){e.preventDefault(); openDlg(+a.dataset.open);}});
-$("#fSvc").innerHTML='<option value="">Select a service area</option>'+S.map(s=>`<option>${escHTML(s.title)}</option>`).join("")+"<option>Something else</option>";
+$("#fSvc").innerHTML='<option value="">Select a service area</option>'+S.map(s=>`<option>${s.title}</option>`).join("")+"<option>Something else</option>";
 
 /* ---------- enquiry form ---------- */
 /* OPTIONAL: paste a free Web3Forms access key here (get one at web3forms.com) so enquiries
    arrive straight in your inbox without opening any email app. Leave empty to use the fallback options. */
-const WEB3FORMS_KEY="7931ce1c-9e7e-43b3-b895-414024c6c7cd"; // Public client-side form identifier, not a private credential.
+const WEB3FORMS_KEY="7931ce1c-9e7e-43b3-b895-414024c6c7cd";
 const TO="business@helpcfo.com";
-const clean=(v,max)=>String(v??"").trim().slice(0,max);
-let lastSubmitAt=0;
-function formData(){
-  return {
-    name:clean($("#fName").value,100),
-    phone:clean($("#fPhone").value,30),
-    email:clean($("#fEmail").value,254),
-    service:clean($("#fSvc").value,120),
-    message:clean($("#fMsg").value,3000)
-  };
-}
 function body(){
-  const d=formData();
-  return `Name: ${d.name}\nPhone: ${d.phone}\nEmail: ${d.email}\nInterested in: ${d.service||"Not specified"}\n\n${d.message}`;
+  return `Name: ${$("#fName").value}\nPhone: ${$("#fPhone").value}\nEmail: ${$("#fEmail").value}\nInterested in: ${$("#fSvc").value||"Not specified"}\n\n${$("#fMsg").value}`;
 }
 function say(msg,ok){const m=$("#fmsg"); m.style.color=ok?"var(--green)":"#B42318"; m.textContent=msg;}
 $("#enq").addEventListener("submit",async e=>{
   e.preventDefault();
   $("#fallback").hidden=true;
-  if($("#companyWebsite").value){ say("Unable to submit this enquiry.",false); return; }
-  const d=formData();
-  if(!d.name||!d.email||!$("#fEmail").validity.valid){ say("Please add your name and a valid email address.",false); return; }
-  const now=Date.now();
-  if(now-lastSubmitAt<15000){ say("Please wait a few seconds before sending another enquiry.",false); return; }
-  lastSubmitAt=now;
-  const subject="Enquiry from helpcfo.com: "+(d.service||"General");
+  if(!$("#fName").value.trim()||!$("#fEmail").value.trim()||!$("#fEmail").validity.valid){ say("Please add your name and a valid email address.",false); return; }
+  const subject="Enquiry from helpcfo.com: "+($("#fSvc").value||"General");
   const text=body();
   if(WEB3FORMS_KEY){
     const btn=$("#sendBtn"); btn.disabled=true; btn.textContent="Sending...";
-    const controller=new AbortController();
-    const timeout=setTimeout(()=>controller.abort(),12000);
     try{
-      const r=await fetch("https://api.web3forms.com/submit",{
-        method:"POST",
-        headers:{"Content-Type":"application/json",Accept:"application/json"},
-        referrerPolicy:"strict-origin-when-cross-origin",
-        signal:controller.signal,
-        body:JSON.stringify({access_key:WEB3FORMS_KEY,subject,from_name:"HelpCFO website",name:d.name,email:d.email,phone:d.phone,service:d.service,message:d.message,botcheck:false})
-      });
-      const j=await r.json().catch(()=>({success:false}));
-      if(r.ok&&j.success){ say("Thank you. Your enquiry has been sent and we will get back to you soon.",true); $("#enq").reset(); clearTimeout(timeout); btn.disabled=false; btn.textContent="Send enquiry"; return; }
-    }catch(_){ /* fall through to email options */ }
-    finally{ clearTimeout(timeout); btn.disabled=false; btn.textContent="Send enquiry"; }
+      const r=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+        body:JSON.stringify({access_key:WEB3FORMS_KEY,subject,from_name:"HelpCFO website",name:$("#fName").value,email:$("#fEmail").value,phone:$("#fPhone").value,service:$("#fSvc").value,message:$("#fMsg").value})});
+      const j=await r.json();
+      btn.disabled=false; btn.textContent="Send enquiry";
+      if(j.success){ say("Thank you. Your enquiry has been sent and we will get back to you soon.",true); $("#enq").reset(); return; }
+    }catch(_){ $("#sendBtn").disabled=false; $("#sendBtn").textContent="Send enquiry"; }
   }
   $("#mailLink").href="mailto:"+TO+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(text);
   $("#gmailLink").href="https://mail.google.com/mail/?view=cm&fs=1&to="+TO+"&su="+encodeURIComponent(subject)+"&body="+encodeURIComponent(text);
@@ -1429,9 +895,8 @@ $("#copyBtn").addEventListener("click",async()=>{
   $("#copyBtn").textContent="Copied. Paste it in an email to "+TO;
 });
 $("#waBtn").onclick=()=>{
-  const d=formData();
-  const t=`Hello HelpCFO, I'd like to discuss: ${d.service||"your services"}.${d.name?" My name is "+d.name+".":""}`;
-  window.open("https://wa.me/917247388696?text="+encodeURIComponent(t),"_blank","noopener,noreferrer");
+  const t=`Hello HelpCFO, I'd like to discuss: ${$("#fSvc").value||"your services"}.${$("#fName").value?" My name is "+$("#fName").value+".":""}`;
+  window.open("https://wa.me/917247388696?text="+encodeURIComponent(t),"_blank","noopener");
 };
 
 /* ---------- calculators ---------- */
